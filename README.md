@@ -1,5 +1,7 @@
 # PIP 12906 MRE
 
+Minimal reproducible example for [pip issue 12906](https://github.com/pypa/pip/issues/12906).
+
 ## Reproduction steps
 
 Tested with Docker version `27.1.1`.
@@ -27,7 +29,8 @@ You can then access it at `https://localhost:443/`.
 
 ### Try using the index
 
-First upgrade the pip version to `24.2` (should work fine). Then try to install another package (for example `pip==24.1`), the `ValueError: check_hostname requires server_hostname` error should occur.
+First upgrade the pip version to `24.2` (should work fine).\
+Then try to install another package (for example `pip==24.1`), the `ValueError: check_hostname requires server_hostname` error should occur.
 
 ```bash
 virtualenv .venv; source .venv/bin/activate
