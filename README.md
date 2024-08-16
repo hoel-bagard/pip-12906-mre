@@ -38,6 +38,7 @@ Then try to install another package (for example `pip==24.1`), the `ValueError: 
 
 ```bash
 virtualenv .venv; source .venv/bin/activate
+pip install pip==24.1
 pip install --index-url https://127.0.0.1/root/pypi pip==24.2 --cert assets/ca.pem  # Fine
 pip install --index-url https://127.0.0.1/root/pypi pip==24.1 --cert assets/ca.pem  # Error
 ```
