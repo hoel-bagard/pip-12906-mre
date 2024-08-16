@@ -4,7 +4,11 @@ Minimal reproducible example for [pip issue 12906](https://github.com/pypa/pip/i
 
 ## Reproduction steps
 
-Tested with Docker version `27.1.1`.
+Tested with:
+
+- Docker version `27.1.1`
+- Python `3.10.4`
+- virtualenv `20.23.0`
 
 ### Build the docker:
 
